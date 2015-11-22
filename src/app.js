@@ -3,13 +3,32 @@
  */
 var portal = angular.module('portal', ['ui.router']);
 
-portal.config(function ($stateProvider, $urlRouterProvider) {
+portal.run(function ($rootScope) {
+
+    $rootScope.$on('$stateChangeStart', function (event, toState, toParams) {
+        var requireLogin = toState.data.requireLogin;
+
+        if (requireLogin && typeof $rootScope.currentUser === 'undefined') {
+            event.preventDefault();
+            // get me a login modal!
+        }
+    });
+}).config(function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/home');
 
     $stateProvider.state('home', {
         url: '/home',
-        templateUrl: 'employee/partials/home.html'
-    }).state('about', {});
+        templateUrl: 'employee/partials/home.html',
+        data: {
+            requireLogin: false
+        }
+    }).state('about', {
+        url: '/about',
+        templateUrl: 'employee/partials/home.html',
+        data: {
+            requireLogin: true
+        }
+    });
 
 });

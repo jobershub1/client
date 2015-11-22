@@ -13,19 +13,19 @@ jQuery(function ($) {
         var ulDropdown = $('ul.dropdown');
         var accordions = $('.accordions');
         var progress = $('.progress-bar');
-        var items = $('.item');
+        //var items = $('.item');
         // OWLS
-        var owlHeader = $('.owl-header');
-        var owlMacbook = $('.owl-macbook');
+        /*var owlHeader = $('.owl-header');
+        var owlMacbook = $('.owl-macbook');*/
 
 
-        for (var i = 0; i < items.length; i++) {
+        /*for (var i = 0; i < items.length; i++) {
             var bg = items.eq(i).data("background");
             items.eq(i).css({
                 "background": "url('" + bg + "') no-repeat center center",
                 "background-size": "cover"
             });
-        }
+        }*/
 
 
         // Progress Bar init
@@ -133,12 +133,12 @@ jQuery(function ($) {
 
         var dialed = false;
 
-        owlMacbook.children('.item').height(owlMacbook.siblings('img').height() * 0.78);
+        //owlMacbook.children('.item').height(owlMacbook.siblings('img').height() * 0.78);
 
         $(window).resize(function () {
 
-            owlHeader.children('.owl-wrapper-outer').children('.owl-wrapper').children('.owl-item').height(owlHeader.siblings('form').outerHeight(false));
-            owlMacbook.find('.item').height(owlMacbook.siblings('img').height() * 0.78);
+            //owlHeader.children('.owl-wrapper-outer').children('.owl-wrapper').children('.owl-item').height(owlHeader.siblings('form').outerHeight(false));
+            //owlMacbook.find('.item').height(owlMacbook.siblings('img').height() * 0.78);
 
             responsiveTable();
         });
@@ -195,7 +195,7 @@ jQuery(function ($) {
 
         // Owl Sliders Initializations
 
-        owlHeader.owlCarousel({
+        /*owlHeader.owlCarousel({
             singleItem: true,
             pagination: false,
             navigation: true,
@@ -230,13 +230,13 @@ jQuery(function ($) {
             singleItem: true,
             pagination: false,
             autoPlay: 4000
-        });
+        });*/
 
-        $('.owl-carousel').each(function () {
+        /*$('.owl-carousel').each(function () {
             $(this).owlCarousel({
                 singleItem: true
             });
-        });
+        });*/
 
         responsiveTable();
 

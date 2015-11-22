@@ -4249,10 +4249,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
         float: left;
     }
     .navbar-nav > li > a {
-	padding-top: 35px;
+	padding-top: 20px;
 	padding-bottom: 15px;
-	height: 130px;
-	width: 128px;
+	height: 90px;
+	width: 100px;
 	margin-right: 5px;
 	text-align: center;
     }
@@ -4388,7 +4388,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-top:5px solid #7E7E7E !important;
     background-color: #F3F3F3;
     border-color: #e7e7e7;
-	height:135px
+	height:95px
 }
 .navbar-default .navbar-brand {
     color: #777;
