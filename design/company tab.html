@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Welcome to Jobers</title>
+<link rel="stylesheet" type="text/css" href="../client/src/assets/css/bootstrap.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link id="main" rel="stylesheet" type="text/css" href="../client/src/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="icons.css">
+<link rel="stylesheet" type="text/css" href="../client/src/assets/css/owl.css">
+<link rel="stylesheet" type="text/css" href="../client/src/assets/css/prettyPhoto.css">
+<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="../client/src/assets/css/animate.css" rel="stylesheet" type="text/css">
+<link rel="icon" 
+      type="image/png" 
+      href="img/favico.png" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <i class="fa fa-ellipsis-v"></i> </button>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i style="text-align:center; padding-left:10px"> <img src="img/jobs-icon.png" width="28" ></i><br />
+          JOBS</a>
+          <ul class="dropdown-menu animated pulse" role="menu">
+            <li><a href="#">Browse all Jobs</a></li>
+            <li><a href="#">Jobs by Company</a></li>
+            <li><a href="#">Jobs by Location</a></li>
+            <li><a href="#">Jobs by Design</a></li>
+            <li><a href="#">Jobs bu Skill</a></li>
+            <li><a href="#">Advanced Search</a></li>
+            <li><a href="#">Jobs by Category</a></li>
+            <li><a href="#">Post your CV</a></li>
+          </ul>
+        </li>
+        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i style="text-align:center; padding-left:5px"> <img src="img/RECRUITERS-icon.png" width="28" ></i><br />
+          RECRUITERS </a> </li>
+        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i style="text-align:center; padding-left:5px"> <img src="img/companies-icon.png" width="28" ></i><br />
+          COMPANIES </a> </li>
+        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i style="text-align:center; padding-left:5px"> <img src="img/blog-icon.png" width="28" ></i><br />
+          BLOG </a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<header>
+  <form class="col-md-3 col-md-offset-3 col-sm-6 col-xs-12 job-form">
+    <h2 align="center">What Your Looking For? </h2>
+    <input type="text" class="form-control white" placeholder="Skills, Designation...">
+    <input type="text" class="form-control white" placeholder="Preferred Location">
+    <input type="text" class="form-control white" placeholder="Total Experience">
+    <button type="submit" class="btn dark-red" style="text-align:center; margin-left:70px"> Search for a job <i class="fa fa-chevron-right"></i> </button>
+    <h3 style="font-size:18px; text-align:center"  data-toggle="modal" data-target="#myModal">Advanced Search </h3>
+    
+    
+    
+    
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="background-color:#C4C0C0; padding:10px; text-align:center"><strong>Modal title</strong></h4>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Skills :</label>
+    <input type="skills" class="form-control" id="exampleInputEmail1" placeholder="Enter Keyskills here...">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Location :</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Location here...">
+  </div>
+ <div class="form-group">
+    <label for="exampleInputPassword1">Work Experience :</label><br />
+    <table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td width="36%"><a href="#" class="dropdown-input">Select</a>
+				<ul class="dropdown">
+					<li><a href="#">1970</a></li>
+					<li><a href="#">1975</a></li>
+					<li><a href="#">2015</a></li>
+				</ul></td>
+    <td width="22%"> <button type="submit" class="btn1 btn-default">Years </button></td>
+    <td width="30%"><a href="#" class="dropdown-input">Select</a>
+				<ul class="dropdown">
+					<li><a href="#">1970</a></li>
+					<li><a href="#">1975</a></li>
+					<li><a href="#">2015</a></li>
+				</ul></td>
+    <td width="12%"><button type="submit" class="btn1 btn-default">Months </button></td>
+  </tr>
+</table>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Job Category :</label>
+   <a href="#" class="dropdown-input">Select Area of Experience</a>
+				<ul class="dropdown">
+					<li><a href="#">1970</a></li>
+					<li><a href="#">1975</a></li>
+					<li><a href="#">2015</a></li>
+				</ul>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Industry :</label>
+   <a href="#" class="dropdown-input">Select the Industry</a>
+				<ul class="dropdown">
+					<li><a href="#">1970</a></li>
+					<li><a href="#">1975</a></li>
+					<li><a href="#">2015</a></li>
+				</ul>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Job Type :</label><br />
+    <table width="92%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td width="13%"><button type="submit" class="btn1 btn-default" style="background-color:#C32B2B; color:#FFF; padding-bottom:5px; padding-top:5px"> AllJobs   </button></td>
+    <td width="31%"><button type="submit" class="btn1 btn-default" style="padding-bottom:5px; padding-top:5px">Company Jobs</button></td>
+    <td width="56%"><button type="submit" class="btn1 btn-default" style="padding-bottom:5px; padding-top:5px">Consultant Jobs</button></td>
+  </tr>
+</table>
+
+    </div>
+    
+    <div class="form-group">
+    <label for="exampleInputPassword1">Sort by :</label><br />
+    <table width="24%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td width="27%"><button type="submit" class="btn1 btn-default" style="background-color:#C32B2B; color:#FFF; padding-bottom:5px; padding-top:5px">Relevance  </button></td>
+    <td width="73%"><button type="submit" class="btn1 btn-default" style="padding-bottom:5px; padding-top:5px">Date</button></td>
+  </tr>
+</table>
+
+    </div>
+    
+    
+  
+  <button type="submit" class="btn1 btn-default pull-right">Search</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
+    
+    
+  </form>
+  <div class="col-md-3 col-md-offset-6 col-sm-12 col-xs-12 headerlinks">
+    <table width="90%" border="0" cellspacing="2" cellpadding="2">
+      <tr>
+        <td><a href="#"><img src="img/sign-in.jpg" width="321" height="142"></a></td>
+        <td rowspan="2"><a href="#"><img src="img/recruter.jpg" width="321" height="286"></a></td>
+      </tr>
+      <tr>
+        <td><a href="#"><img src="img/sign-up.jpg" width="321" height="144"></a></td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  <div class="owl-carousel owl-header">
+    <div class="item" data-background="img/header.jpg"></div>
+    <div class="item" data-background="img/header2.jpg"></div>
+    <div class="item" data-background="img/header3.jpg"></div>
+  </div>
+</header>
+<section class="facts" style="background-color:#CC1818;">
+  <div class="container">
+    <div class="row text-center"> Browse Jobs - <span style="color:#FFF; margin-right:15px"><a href="#"> All Jobs</a></span> <span style="color:#FFF; margin-right:15px"><a href="#">Jobs by Company</a></span> <span style="color:#FFF; margin-right:15px"><a href="#">Jobs by Category</a></span> <span style="color:#FFF; margin-right:15px"><a href="#">Jobs by Location </a></span> <span style="color:#FFF; margin-right:15px"><a href="#">Jobs by Designation</a></span> <span style="color:#FFF; margin-right:15px"><a href="#">Jobs by Skill</a></span> </div>
+  </div>
+</section>
+<section>
+ <div class="container" style="border: 1px solid #CD2B2B; text-align:center; margin-bottom:10px">
+ <h1>Companies</h1>
+ </div>
+  <div class="container" style="border: 1px solid #CD2B2B;">
+    <div class="row" style="background-color:#CCC">
+    <div class="col-md-6"><span style="text-align:right"><h2>Select any Company</h2></span></div>
+    <div class="col-md-4"><input type="text" class="form-control white" placeholder="Enter Company name here..." size="10"></div>
+    <div class="col-md-2"><button type="submit" class="btn dark-red" style="margin-top:20px"> Search</button></form></div>
+   </div>
+   
+   <div class="row">
+   <div class="col-xs-6 col-sm-3">
+      <ul>
+                
+                <li><a title="Avago Technologies" href="#" target="_blank">Avago Technologies</a></li>
+                <li><a title="Calsoft Labs, An Alten Company " href="#" target="_blank">Calsoft Labs,<br>
+                  An Alten Company </a></li>
+                <li><a title="e-Infochips" href="#" target="_blank">e-Infochips</a></li>
+                <li><a title="Intel " href="#" target="_blank">Intel </a></li>
+                <li><a title="Marvell" href="#" target="_blank">Marvell</a></li>
+                <li><a title="MAXIM Integrated " href="#" target="_blank">MAXIM Integrated </a></li>
+                <li><a title="QLOGIC" href="#" target="_blank">QLOGIC</a></li>
+                <li><a title="Sankalp Semiconductors" href="#" target="_blank">Sankalp Semiconductors</a></li>
+                <li><a title="Semtech Advanced Systems" href="#" target="_blank">Semtech Advanced Systems</a></li>
+                <li><a title="SMARTPLAY" href="#" target="_blank">SMARTPLAY</a></li>
+                <li><a title="SYNAPSE DESIGN" href="#" target="_blank">SYNAPSE DESIGN</a></li>
+                <li><a title="XILINX" href="#" target="_blank">XILINX</a></li>
+              </ul>
+   </div>
+   <div class="col-xs-6 col-sm-3">
+       <ul>
+                
+                <li><a title="Avago Technologies" href="#" target="_blank">Avago Technologies</a></li>
+                <li><a title="Calsoft Labs, An Alten Company " href="#" target="_blank">Calsoft Labs,<br>
+                  An Alten Company </a></li>
+                <li><a title="e-Infochips" href="#" target="_blank">e-Infochips</a></li>
+                <li><a title="Intel " href="#" target="_blank">Intel </a></li>
+                <li><a title="Marvell" href="#" target="_blank">Marvell</a></li>
+                <li><a title="MAXIM Integrated " href="#" target="_blank">MAXIM Integrated </a></li>
+                <li><a title="QLOGIC" href="#" target="_blank">QLOGIC</a></li>
+                <li><a title="Sankalp Semiconductors" href="#" target="_blank">Sankalp Semiconductors</a></li>
+                <li><a title="Semtech Advanced Systems" href="#" target="_blank">Semtech Advanced Systems</a></li>
+                <li><a title="SMARTPLAY" href="#" target="_blank">SMARTPLAY</a></li>
+                <li><a title="SYNAPSE DESIGN" href="#" target="_blank">SYNAPSE DESIGN</a></li>
+                <li><a title="XILINX" href="#" target="_blank">XILINX</a></li>
+              </ul>
+   </div>
+   <div class="col-xs-6 col-sm-3">
+       <ul>
+                
+                <li><a title="Avago Technologies" href="#" target="_blank">Avago Technologies</a></li>
+                <li><a title="Calsoft Labs, An Alten Company " href="#" target="_blank">Calsoft Labs,<br>
+                  An Alten Company </a></li>
+                <li><a title="e-Infochips" href="#" target="_blank">e-Infochips</a></li>
+                <li><a title="Intel " href="#" target="_blank">Intel </a></li>
+                <li><a title="Marvell" href="#" target="_blank">Marvell</a></li>
+                <li><a title="MAXIM Integrated " href="#" target="_blank">MAXIM Integrated </a></li>
+                <li><a title="QLOGIC" href="#" target="_blank">QLOGIC</a></li>
+                <li><a title="Sankalp Semiconductors" href="#" target="_blank">Sankalp Semiconductors</a></li>
+                <li><a title="Semtech Advanced Systems" href="#" target="_blank">Semtech Advanced Systems</a></li>
+                <li><a title="SMARTPLAY" href="#" target="_blank">SMARTPLAY</a></li>
+                <li><a title="SYNAPSE DESIGN" href="#" target="_blank">SYNAPSE DESIGN</a></li>
+                <li><a title="XILINX" href="#" target="_blank">XILINX</a></li>
+              </ul>
+   </div>
+   <div class="col-xs-6 col-sm-3">
+     <ul>
+                
+                <li><a title="Avago Technologies" href="#" target="_blank">Avago Technologies</a></li>
+                <li><a title="Calsoft Labs, An Alten Company " href="#" target="_blank">Calsoft Labs,<br>
+                  An Alten Company </a></li>
+                <li><a title="e-Infochips" href="#" target="_blank">e-Infochips</a></li>
+                <li><a title="Intel " href="#" target="_blank">Intel </a></li>
+                <li><a title="Marvell" href="#" target="_blank">Marvell</a></li>
+                <li><a title="MAXIM Integrated " href="#" target="_blank">MAXIM Integrated </a></li>
+                <li><a title="QLOGIC" href="#" target="_blank">QLOGIC</a></li>
+                <li><a title="Sankalp Semiconductors" href="#" target="_blank">Sankalp Semiconductors</a></li>
+                <li><a title="Semtech Advanced Systems" href="#" target="_blank">Semtech Advanced Systems</a></li>
+                <li><a title="SMARTPLAY" href="#" target="_blank">SMARTPLAY</a></li>
+                <li><a title="SYNAPSE DESIGN" href="#" target="_blank">SYNAPSE DESIGN</a></li>
+                <li><a title="XILINX" href="#" target="_blank">XILINX</a></li>
+              </ul>
+   
+   </div>
+   </div>
+    
+    
+    
+      
+      
+      
+    </div>
+      
+    </div>
+        
+      </div>
+      
+    
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+      <h4 class="heading no-margin"><strong>Jobs by Function</strong></h4>
+        <p><ul>
+                
+                <li><a title="Avago Technologies" href="#" target="_blank">Avago Technologies</a></li>
+                <li><a title="Calsoft Labs, An Alten Company " href="#" target="_blank">Calsoft Labs,<br>
+                  An Alten Company </a></li>
+                <li><a title="e-Infochips" href="#" target="_blank">e-Infochips</a></li>
+                <li><a title="Intel " href="#" target="_blank">Intel </a></li>
+                <li><a title="Marvell" href="#" target="_blank">Marvell</a></li>
+                <li><a title="MAXIM Integrated " href="#" target="_blank">MAXIM Integrated </a></li>
+                <li><a title="QLOGIC" href="#" target="_blank">QLOGIC</a></li>
+                <li><a title="Sankalp Semiconductors" href="#" target="_blank">Sankalp Semiconductors</a></li>
+                <li><a title="Semtech Advanced Systems" href="#" target="_blank">Semtech Advanced Systems</a></li>
+                <li><a title="SMARTPLAY" href="#" target="_blank">SMARTPLAY</a></li>
+                <li><a title="SYNAPSE DESIGN" href="#" target="_blank">SYNAPSE DESIGN</a></li>
+                <li><a title="XILINX" href="#" target="_blank">XILINX</a></li>
+              </ul></p>
+      </div>
+      <div class="col-xs-6 col-sm-3 text-left">
+        
+        <h4 class="heading no-margin"><strong>IT Job Skills</strong></h4>
+        <p><ul>
+                
+                <li><a title="Avago Technologies" href="#" target="_blank">Avago Technologies</a></li>
+                <li><a title="Calsoft Labs, An Alten Company " href="#" target="_blank">Calsoft Labs,<br>
+                  An Alten Company </a></li>
+                <li><a title="e-Infochips" href="#" target="_blank">e-Infochips</a></li>
+                <li><a title="Intel " href="#" target="_blank">Intel </a></li>
+                <li><a title="Marvell" href="#" target="_blank">Marvell</a></li>
+                <li><a title="MAXIM Integrated " href="#" target="_blank">MAXIM Integrated </a></li>
+                <li><a title="QLOGIC" href="#" target="_blank">QLOGIC</a></li>
+                <li><a title="Sankalp Semiconductors" href="#" target="_blank">Sankalp Semiconductors</a></li>
+                <li><a title="Semtech Advanced Systems" href="#" target="_blank">Semtech Advanced Systems</a></li>
+                <li><a title="SMARTPLAY" href="#" target="_blank">SMARTPLAY</a></li>
+                <li><a title="SYNAPSE DESIGN" href="#" target="_blank">SYNAPSE DESIGN</a></li>
+                <li><a title="XILINX" href="#" target="_blank">XILINX</a></li>
+              </ul></p>
+      </div>
+      <div class="col-xs-6 col-sm-3 text-left">
+         <h4 class="heading no-margin"><strong>Non IT Job Skills</strong></h4>
+        <p><ul>
+                
+                <li><a title="Avago Technologies" href="#" target="_blank">Avago Technologies</a></li>
+                <li><a title="Calsoft Labs, An Alten Company " href="#" target="_blank">Calsoft Labs,<br>
+                  An Alten Company </a></li>
+                <li><a title="e-Infochips" href="#" target="_blank">e-Infochips</a></li>
+                <li><a title="Intel " href="#" target="_blank">Intel </a></li>
+                <li><a title="Marvell" href="#" target="_blank">Marvell</a></li>
+                <li><a title="MAXIM Integrated " href="#" target="_blank">MAXIM Integrated </a></li>
+                <li><a title="QLOGIC" href="#" target="_blank">QLOGIC</a></li>
+                <li><a title="Sankalp Semiconductors" href="#" target="_blank">Sankalp Semiconductors</a></li>
+                <li><a title="Semtech Advanced Systems" href="#" target="_blank">Semtech Advanced Systems</a></li>
+                <li><a title="SMARTPLAY" href="#" target="_blank">SMARTPLAY</a></li>
+                <li><a title="SYNAPSE DESIGN" href="#" target="_blank">SYNAPSE DESIGN</a></li>
+                <li><a title="XILINX" href="#" target="_blank">XILINX</a></li>
+              </ul></p>
+      </div>
+      <div class="col-xs-6 col-sm-3 text-left">
+       <h4 class="heading no-margin"><strong>Non IT Job Skills</strong></h4>
+        <p><ul>
+                
+                <li><a title="Avago Technologies" href="#" target="_blank">Avago Technologies</a></li>
+                <li><a title="Calsoft Labs, An Alten Company " href="#" target="_blank">Calsoft Labs,<br>
+                  An Alten Company </a></li>
+                <li><a title="e-Infochips" href="#" target="_blank">e-Infochips</a></li>
+                <li><a title="Intel " href="#" target="_blank">Intel </a></li>
+                <li><a title="Marvell" href="#" target="_blank">Marvell</a></li>
+                <li><a title="MAXIM Integrated " href="#" target="_blank">MAXIM Integrated </a></li>
+                <li><a title="QLOGIC" href="#" target="_blank">QLOGIC</a></li>
+                <li><a title="Sankalp Semiconductors" href="#" target="_blank">Sankalp Semiconductors</a></li>
+                <li><a title="Semtech Advanced Systems" href="#" target="_blank">Semtech Advanced Systems</a></li>
+                <li><a title="SMARTPLAY" href="#" target="_blank">SMARTPLAY</a></li>
+                <li><a title="SYNAPSE DESIGN" href="#" target="_blank">SYNAPSE DESIGN</a></li>
+                <li><a title="XILINX" href="#" target="_blank">XILINX</a></li>
+              </ul></p>
+              
+      </div>
+      
+     
+      
+    </div>
+    
+    
+    
+  </div>
+  
+  <div class="row bottom no-padding no-margin">
+    <div class="container">
+      <div class="col-md-12 no-padding text-left column-bottom">
+        <p align="center" style="color:#FFF">Copyright &copy; JOBERS - 2015 | All right reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/smoothWheel.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/jquery.prettyPhoto.js"></script> 
+<script src="js/images-loaded.js"></script> 
+<script src="js/jquery.count.js"></script> 
+<script src="js/knobify.js"></script> 
+<script src="js/isotope.js"></script> 
+<script src="js/main.js"></script>
+</body>
+
+</html>
