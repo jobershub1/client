@@ -41,4 +41,22 @@ portal.directive('headerSlider', function(){
             }, true);
         }
     };
+}).directive('logIn', function(){
+    return {
+        restrict: 'E',
+        templateUrl: 'employee/partials/login_form.html',
+        link: function(scope, element, attrs) {
+            scope.formSubmit = function(){
+				console.log('hello');
+			};
+        }
+    };
+}).directive('signUp', function(){
+    return {
+        restrict: 'E',
+        templateUrl: 'employee/partials/signup_form.html',
+        link: function(scope, element, attrs) {
+            
+        }
+    };
 });
