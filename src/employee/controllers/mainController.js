@@ -1,0 +1,4 @@
+
+portal.controller('mainController', function () {
+
+});

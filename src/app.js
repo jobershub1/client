@@ -33,13 +33,13 @@ portal.run(function ($rootScope) {
         url: '/login',
         templateUrl: 'employee/partials/login_form.html',
         data: {
-            requireLogin: true
+            requireLogin: false
         }
     }).state('signup', {
         url: '/signup',
         templateUrl: 'employee/partials/signup_form.html',
         data: {
-            requireLogin: true
+            requireLogin: false
         }
     });
 

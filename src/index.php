@@ -18,7 +18,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="main-container">
+<div class="main-container" ng-controller="mainController">
     <div ng-include="'common/partials/nav.html'"></div>
     <div ui-view></div>
 </div>
@@ -35,6 +35,7 @@
 <script src="js/knobify.js"></script>
 <script src="js/isotope.js"></script>
 <script src="js/main.js"></script>
+<script src="employee/controllers/mainController.js"></script>
 <script src="employee/directives/employeeDirectives.js"></script>
 
 </body>
