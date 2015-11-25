@@ -30,7 +30,7 @@ portal.directive('headerSlider', function(){
             scope.enableSearchJob = false;
             scope.$watch('searchForm', function(newVal, oldVal){
                 if (!$.isEmptyObject(newVal)) {
-                    if(newVal.skill !== '' || newVal.location !== '' || newVal.experience !== '') {
+                    if(newVal.skill || newVal.location || newVal.experience) {
                         scope.enableSearchJob = true;
                     } else {
                         scope.enableSearchJob = false;
@@ -39,6 +39,7 @@ portal.directive('headerSlider', function(){
                     scope.enableSearchJob = false;
                 }
             }, true);
+            scope.advancedJobSearchForm = {};
         }
     };
 });
