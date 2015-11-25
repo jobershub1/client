@@ -29,6 +29,18 @@ portal.run(function ($rootScope) {
         data: {
             requireLogin: true
         }
+    }).state('login', {
+        url: '/login',
+        templateUrl: 'employee/partials/login_form.html',
+        data: {
+            requireLogin: true
+        }
+    }).state('signup', {
+        url: '/signup',
+        templateUrl: 'employee/partials/signup_form.html',
+        data: {
+            requireLogin: true
+        }
     });
 
 });
