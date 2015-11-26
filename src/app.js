@@ -41,6 +41,12 @@ portal.run(function ($rootScope) {
         data: {
             requireLogin: false
         }
+    }).state('forgotpass', {
+        url: '/forgotpass',
+        templateUrl: 'employee/partials/forgotpass_form.html',
+        data: {
+            requireLogin: false
+        }
     });
 
 });
