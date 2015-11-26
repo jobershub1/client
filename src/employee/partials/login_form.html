@@ -9,21 +9,21 @@
                 <form>
                     <div class="col-md-12">
 
-                        <input type="text" name="name" class="form-control normal" placeholder="Your Name">
+                        <input type="text" name="name" ng-model="user.username" class="form-control normal" placeholder="Your Name">
                     </div>
 
                     <div class="col-md-12">
 
-                        <input type="Password" name="name" class="form-control normal" placeholder="Password">
+                        <input type="Password" name="name"  ng-model="user.password" class="form-control normal" placeholder="Password">
                     </div>
                     <div class="col-xs-6">
                         <label>
-                            <input type="checkbox" value="remember-me"> Remember me
+                            <input type="checkbox"  ng-model="user.remember" value="remember-me"> Remember me
                         </label>
                     </div>
                     <div class="col-xs-6 pull-right" style="text-align:right"><a href="#">Forgot Password?</a></div>
                     <div class="col-md-12 ">
-                        <button type="submit" class="btn dark-red pull-right"> Signin <i
+                        <button type="submit" class="btn dark-red pull-right" ng-click="login(user)"> Signin <i
                                 class="fa fa-chevron-right"></i></button>
                     </div>
                     <div class="col-md-12" style="height:1px; background-color:#999; margin-top:10px"></div>

@@ -26,6 +26,9 @@
 <script src="js/angularjs/angular.min.js"></script>
 <script src="js/angularjs/angular-ui-router.js"></script>
 <script src="app.js"></script>
+<script src="employee/constants/employeeConfig.js"></script>
+<script src="common/services/portalRequest.js"></script>
+<script src="employee/services/employeeService.js"></script>
 <script src="js/smoothWheel.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.js"></script>
